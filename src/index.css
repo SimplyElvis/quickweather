@@ -4,7 +4,48 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color: rgb(14, 26, 26, 0.5);
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 16px;
+}
+
+input {
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  margin: 0 1em;
+  padding: 0.5em;
+  color: white;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+::placeholder {
+  font-size: 1rem;
+}
+
+button {
+  outline: 0;
+  border: 0;
+  background-color: #e07b32;
+  padding: 0.5em 1em;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-family: inherit;
+  font-weight: 700;
 }
