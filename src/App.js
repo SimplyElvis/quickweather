@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import bg from "./assets/bg.jpg";
+// import bg from "./assets/bg.jpg";
 import bg1 from "./assets/bg1.jpg";
 import Navbar from "./components/Navbar";
 import Weather from "./components/Weather";

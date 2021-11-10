@@ -39,8 +39,9 @@ input {
 button {
   outline: 0;
   border: 0;
-  background-color: #e07b32;
-  padding: 0.5em 1em;
+  background-color: blue;
+  padding: 0.5em 1.3em;
+  margin: 0.5em;
   color: white;
   font-size: 1rem;
   border-radius: 5px;
