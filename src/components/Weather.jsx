@@ -12,7 +12,12 @@ const StyledWeather = styled.div`
   display: grid;
   place-items: center;
   z-index: 5;
+
+  @media (max-width: 768px) {
+    min-height: 200vh;
+  }
 `;
+
 function Weather() {
   return (
     <StyledWeather>

@@ -10,6 +10,20 @@ const StyledCountries = styled.footer`
   background-color: var(--color);
   width: 100%;
   padding: 1em 0;
+  margin-top: 1em;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-scrollbar-width: none;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+    place-items: center;
+  }
 `;
 
 function Countries() {

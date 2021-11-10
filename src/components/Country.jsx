@@ -8,9 +8,20 @@ const StyledCountry = styled.div`
   background-color: blue;
   padding: 0.6em;
   margin: 0 0.5em;
+  flex-shrink: 0;
+  flex-grow: 0;
 `;
 function Country() {
-  return <StyledCountry>Country Data</StyledCountry>;
+  return (
+    <StyledCountry>
+      <p>Temp</p>
+      <div>
+        <p>City</p>
+        <p>desc</p>
+        <p>icon</p>
+      </div>
+    </StyledCountry>
+  );
 }
 
 export default Country;
