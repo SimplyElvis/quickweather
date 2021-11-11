@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import logo from "../assets/logo.svg";
+
 const StyledNav = styled.div`
   width: 100%;
   max-width: 1440px;
@@ -22,7 +24,7 @@ function Navbar() {
   return (
     <StyledNav>
       <span>quick.weather</span>
-      <div>navicon</div>
+      <img src={logo} alt="logo" />
     </StyledNav>
   );
 }

@@ -39,7 +39,7 @@ input {
 button {
   outline: 0;
   border: 0;
-  background-color: blue;
+  background-color: #ffb600;
   padding: 0.5em 1.3em;
   margin: 0.5em;
   color: white;
@@ -49,4 +49,9 @@ button {
   text-transform: capitalize;
   font-family: inherit;
   font-weight: 700;
+}
+
+p {
+  line-height: 1.3rem;
+  margin: 0.2em 0;
 }
