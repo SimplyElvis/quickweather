@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import Search from "./Search";
 import Result from "./Result";
 // import Countries from "./Countries";
+import DataContext from "../context/DataContext";
 
 const StyledWeather = styled.div`
   width: 100%;
@@ -19,10 +20,14 @@ const StyledWeather = styled.div`
 `;
 
 function Weather() {
+  const [city, setCity] = useState("");
+
   return (
     <StyledWeather>
-      <Search />
-      <Result />
+      <DataContext.Provider value={{ city, setCity }}>
+        <Search />
+        <Result />
+      </DataContext.Provider>
       {/* <Countries /> */}
     </StyledWeather>
   );

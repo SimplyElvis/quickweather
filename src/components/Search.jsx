@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import styled from "styled-components";
+import DataContext from "../context/DataContext";
 
 const StyledSearch = styled.div`
   display: flex;
@@ -14,10 +15,12 @@ const StyledSearch = styled.div`
 
 function Search() {
   const [search, setSearch] = useState("");
+  const { setCity } = useContext(DataContext);
 
   function submitSearch(event) {
     event.preventDefault();
-    // send request via axios.
+    // send city/location name.
+    setCity(search);
   }
 
   return (

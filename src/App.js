@@ -21,6 +21,7 @@ const Overlay = styled.div`
   background-color: #121f25;
   width: 100%;
   height: 100%;
+  opacity: 0.4;
   mix-blend-mode: lighten;
   z-index: -1;
 `;

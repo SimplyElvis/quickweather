@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import useFetch from "../hooks/useFetch";
+import DataContext from "../context/DataContext";
 
 const StyledResult = styled.section`
   min-height: 100px;
@@ -32,15 +33,17 @@ const Flex = styled.div`
   }
 `;
 
-const url =
-  "https://api.openweathermap.org/data/2.5/weather?q=lagos&units=metric&appid=d466d624408eddda1d2f512245310622";
-
 const Result = () => {
-  const { data, loading } = useFetch(url);
+  const { city } = useContext(DataContext);
+  const url = `https://quickproxi.herokuapp.com/api/weather?q=${
+    city || "delta"
+  }&units=metric`;
+  const { data, loading, message } = useFetch(url);
+
   return (
     <StyledResult>
       {loading ? (
-        <p>Loading...</p>
+        <p>{message}</p>
       ) : (
         <Flex>
           <Flex>

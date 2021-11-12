@@ -39,10 +39,10 @@ input {
 button {
   outline: 0;
   border: 0;
-  background-color: #ffb600;
+  background-color: #ffff;
   padding: 0.5em 1.3em;
   margin: 0.5em;
-  color: white;
+  color: #000;
   font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
