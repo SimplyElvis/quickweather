@@ -7,4 +7,4 @@ Weather web app built using MERN stack and the open weather map API. Backend ser
 - Run `npm instal` or `yarn install` to installl all dependencies.
 - Start app with `npm start` or `yarn start`
 
-[weather app)[./weatherApp.jpg]
+[weather app](./weatherApp.jpg)
